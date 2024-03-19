@@ -5,7 +5,7 @@ if (existsSync('config.env')) require('dotenv').config({ path: './config.env' })
 process.env.NODE_OPTIONS = '--max_old_space_size=2560'//2.5
 const DB_URL =  process.env.DATABASE_URL || '';
 module.exports = {
-    SESSION_ID: process.env.SESSION_ID || '', //your ssid to run bot
+    SESSION_ID: process.env.SESSION_ID || 'inrl~8c6ee7wcpe6869f3fa50a0eb3288271b31f6', //your ssid to run bot
     HEROKU: {
         API_KEY: process.env.HEROKU_API_KEY,
         APP_NAME: process.env.HEROKU_APP_NAME
@@ -14,31 +14,31 @@ module.exports = {
     BASE_URL : "https://upper-romy-inrl-bot.koyeb.app/",
     REPO: "inrl-official/inrl-bot-md",
     BGM_URL : process.env.BGM_URL || "null",
-    REJECT_CALL : toBool(process.env.REJECT_CALL || 'false'),
-    BADWORD_BLOCK : toBool(process.env.BADWORD_BLOCK || 'false'),
-    ALLWAYS_ONLINE: toBool(process.env.ALLWAYS_ONLINE || "false"),
+    REJECT_CALL : toBool(process.env.REJECT_CALL || 'true'),
+    BADWORD_BLOCK : toBool(process.env.BADWORD_BLOCK || 'true'),
+    ALLWAYS_ONLINE: toBool(process.env.ALLWAYS_ONLINE || "true"),
     PM_BLOCK : toBool(process.env.PM_BLOCK || "false"),
     BGMBOT : toBool(process.env.BGMBOT || "false"),
     CALL_BLOCK : toBool(process.env.CALL_BLOCK || "false"),
     STATUS_VIEW : process.env.STATUS_VIEW || "false",
     SAVE_STATUS : toBool(process.env.SAVE_STATUS || "false"),
-    ADMIN_SUDO_ACCESS: toBool(process.env.ADMIN_SUDO_ACCESS || "false"),
+    ADMIN_SUDO_ACCESS: toBool(process.env.ADMIN_SUDO_ACCESS || "true"),
     DISABLE_PM: toBool(process.env.DISABLE_PM || "false"),
     DISABLE_GRP : toBool(process.env.DISABLE_GRP || "false"),
     ERROR_MSG : toBool(process.env.ERROR_MSG || "true"),
     AJOIN: toBool(process.env.AJOIN || 'false'),
     READ : process.env.READ ||  "false",//true, command
-    CHATBOT : process.env.CHATBOT || "false",//true, pm, group
-    REACT : process.env.REACT || "false",//true, command, emoji
-    WARNCOUND : process.env.WARNCOUND || 5,
-    BOT_INFO : process.env.BOT_INFO || "INRL-BOT-MD;INRL;https://i.imgur.com/DyLAuEh.jpg",
-    WORKTYPE : process.env.WORKTYPE || "private",
-    PREFIX : process.env.PREFIX || "[.,!]",//both  .  and [.] equal, for multi prefix we use [] this
+    CHATBOT : process.env.CHATBOT || "true",//true, pm, group
+    REACT : process.env.REACT || "true",//true, command, emoji
+    WARNCOUND : process.env.WARNCOUND || 3,
+    BOT_INFO : process.env.BOT_INFO || "ZzZ;"INRLhttps://telegra.ph/file/a53ab5760d07005b85008.jpg",
+    WORKTYPE : process.env.WORKTYPE || "public",
+    PREFIX : process.env.PREFIX || "[false]",//both  .  and [.] equal, for multi prefix we use [] this
     LANG : process.env.LANG || "en",
     PERSONAL_MESSAGE: process.env.PERSONAL_MESSAGE || "null",
     BOT_PRESENCE : process.env.BOT_PRESENCE || "unavailable",
-    AUDIO_DATA : process.env.AUDIO_DATA || "INRL-BOT-MD;INRL;https://i.imgur.com/DyLAuEh.jpg",
-    STICKER_DATA : process.env.STICKER_DATA || "inrl;inrl",
+    AUDIO_DATA : process.env.AUDIO_DATA || "ZzZ;INRLhttps://telegra.ph/file/a53ab5760d07005b85008.jpg",
+    STICKER_DATA : process.env.STICKER_DATA || "𝒁𝑼𝑬𝑺 𝑯4𝑿𝒁 !",
     BRAINSHOP: process.env.BRAINSHOP || '172372,nbjE0YAlyw3cpoMl',
     SUDO : process.env.SUDO || "null",
     RMBG_KEY: process.env.RMBG_KEY,
